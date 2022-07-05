@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Bicicletas">
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
   <title> Bicicletas | Bikkle</title>
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body id="bicicletas">
@@ -37,7 +39,7 @@
     </div>
 
     <div>
-      <div class="bicicletas container">
+      <div class="bicicletas container fadeInRight" data-anime="300">
         <div class="bicicletas-img">
           <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta preta">
           <span class="font-2-m c0">R$ 4499</span>
@@ -65,7 +67,7 @@
     </div>
 
     <div class="bicicletas-bg">
-      <div class="bicicletas container">
+      <div class="bicicletas container fadeInLeft" data-anime="400">
         <div class="bicicletas-img">
           <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta preta">
           <span class="font-2-m c0">R$ 3499</span>
@@ -95,7 +97,7 @@
     </div>
 
     <div>
-      <div class="bicicletas container">
+      <div class="bicicletas container fadeInRight" data-anime="500">
         <div class="bicicletas-img">
           <img src="./img/bicicletas/magic.jpg" alt="Bicicleta preta">
           <span class="font-2-m c0">R$ 2499</span>
@@ -165,6 +167,8 @@
 
   </footer>
 
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
